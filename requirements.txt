@@ -1,0 +1,8 @@
+flask
+flask-bootstrap
+pytest
+requests
+pandas
+seaborn
+gunicorn
+python-dateutil
