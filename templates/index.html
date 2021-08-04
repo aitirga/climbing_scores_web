@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block body %}
+<!--{% include "navbar.html" %}-->
+<section class="section">
+  <h1 class="title">Large section</h1>
+  <h2 class="subtitle">
+    A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
+  </h2>
+</section>
+
+<div class="container is-max-widescreen">
+  <div class="notification is-primary">
+    This container has a <code>max-width</code> of <code>$widescreen - $container-offset</code> on fullhd.
+  </div>
+</div>
+
+
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/scripts.js"></script>
+{% endblock %}
