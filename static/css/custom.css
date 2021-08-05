@@ -1,0 +1,21 @@
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+#climber_data-section {
+    background: #23d4b2;
+}
+
+.delete {
+    background: #23d4b2;
+}
+
+.delete:hover {
+    background: #126c5d;
+}
+
+.table tr > td{
+    vertical-align: middle;
+}
