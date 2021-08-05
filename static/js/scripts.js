@@ -18,12 +18,12 @@ function createNewClimber() {
     var row = climberTable.insertRow(1)
     row.id = lastID + 1
     row.innerHTML='      <td><input class="input climberName" type="text" placeholder="Name"></td>\n' +
-        '      <td><input class="input speedTime" type="text" placeholder="Time [s]"></td>\n' +
+        '      <td><input class="input speedTime" type="text" placeholder="Ranking"></td>\n' +
         '      <td><input class="input boulder1" type="text" placeholder="Boulder 1"</td>\n' +
         '      <td><input class="input boulder2" type="text" placeholder="Boulder 2"></td>\n' +
         '      <td><input class="input boulder3" type="text" placeholder="Boulder 3"></td>\n' +
         '      <td><input class="input boulder4" type="text" placeholder="Boulder 4"></td>\n' +
-        '      <td><input class="input height" type="text" placeholder="Height [m]"></td>\n' +
+        '      <td><input class="input height" type="text" placeholder="Steps"></td>\n' +
         '      <td><div><button class="delete"></button></div></td>'
     // console.log(JSON.stringify(climberTable))
     saveToLocalStorage()
@@ -91,7 +91,7 @@ function createClimberTable(table) {
               <td><input class="input boulder2" type="text" placeholder="Boulder 2"></td>\n
               <td><input class="input boulder3" type="text" placeholder="Boulder 3"></td>\n
               <td><input class="input boulder4" type="text" placeholder="Boulder 4"></td>\n
-              <td><input class="input height" type="text" placeholder="N steps"></td>\n
+              <td><input class="input height" type="text" placeholder="Steps"></td>\n
               <td><div><button class="delete"></button></div></td>`
     } else {
     table.forEach(function (climber) {
@@ -104,7 +104,7 @@ function createClimberTable(table) {
               <td><input class="input boulder2" type="text" placeholder="Boulder 2"></td>\n
               <td><input class="input boulder3" type="text" placeholder="Boulder 3"></td>\n
               <td><input class="input boulder4" type="text" placeholder="Boulder 4"></td>\n
-              <td><input class="input height" type="text" placeholder="N steps"></td>\n
+              <td><input class="input height" type="text" placeholder="Steps"></td>\n
               <td><div><button class="delete"></button></div></td>`
             let climberName = row.getElementsByClassName('climberName').item(0)
             let speedTime = row.getElementsByClassName('speedTime').item(0)

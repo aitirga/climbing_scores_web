@@ -19,3 +19,18 @@ table.center {
 .table tr > td{
     vertical-align: middle;
 }
+
+#climber_ranking-body > tr:nth-child(1) {
+    background: #CFA638;
+    color: #faf4e3;
+}
+
+#climber_ranking-body > tr:nth-child(2) {
+    background: #a4a4a4;
+    color: #ffffff;
+}
+
+#climber_ranking-body > tr:nth-child(3) {
+    background: #BC7F40;
+    color: #603200;
+}
