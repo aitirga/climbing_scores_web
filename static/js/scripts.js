@@ -203,14 +203,22 @@ function updateRankingTable(table) {
         return a.score - b.score
     })
     boulderLeadDict.reverse().forEach(function (value, idx) {
-        finalRank[value.idx]['boulderRank'] = idx + 1
+        if (value.score === 0.0) {
+            finalRank[value.idx]['boulderRank'] = 1.0
+        } else {
+            finalRank[value.idx]['boulderRank'] = idx + 1
+        }
     })
     // Sort Lead and find ranking
     const sortedLeadDict = leadRank.sort(function (a, b) {
         return a.height - b.height
     })
     sortedLeadDict.reverse().forEach(function (value, idx) {
-        finalRank[value.idx]['leadRank'] = idx + 1
+        if (value.height === 0.0) {
+            finalRank[value.idx]['leadRank'] = 1.0
+        } else {
+            finalRank[value.idx]['leadRank'] = idx + 1
+        }
     })
 
     // console.log(finalRank)
